@@ -35,10 +35,6 @@ def start_game():
 
 # defining the game functions
 def look():
-    print ("You awaken in a open glen surrounded by old oak trees, rays of sun wash over your body. Their warmth healing the wounds of an old world.")
-    print("Half-rising and holding yourself up, you begin to feel the energy the light is enbibing your skin with. ")
-    print("Recalling the sins of the past and now sitting in the grass in what could only be considered a...video game?")
-    print "You can make out figures moving to the left deeper in the the trees and hdar the sounds of a solitary crow in trhe distance. ")
     print("You can type 'look' to look around")
 
 def fight():
@@ -49,9 +45,18 @@ def fight():
     action = input("What do you want to do? ").strip().lower()
     if action == 'attack':
         print("You attack the enemy and win!")
-    elif action == 'defend
+    elif action == 'defend':
         print("You defend yourself successfully!")
     elif action == 'run':
+        # randomly determine if the player escapes
+        if random.choice([True, False]):
+            print("You run away successfully!")
+        else:
+            print("You couldn't escape! The enemy attacks you!")
+            # simulate enemy attack
+            if random.choice([True, False]):
+                print("You are injured!")
+            else:
         print("You run away safely!")
     else:
         print("Invalid action. The enemy attacks you!")
@@ -73,7 +78,11 @@ if __name__ == "__main__":
 
     # Main game loop
     while True:
-        print("\nYou are in a dark and cold world. You are nobody, you are everybody. You are the world.")
+        print("You awaken in an open glen surrounded by old oak trees, rays of sun wash over your body. Their warmth heals the wounds of an old world.")
+        print("Half-rising and holding yourself up, you begin to feel the energy the light is imbibing your skin with.")
+        print("Recalling the sins of the past and now sitting in the grass in what could only be considered a...video game?")
+        print("You can make out figures moving to the left deeper in the trees and hear the sounds of a solitary crow in the distance.")
+        print("The singing of the birds has reached a crescendo, the wind rises and your hair...or lack of it, is set ablaze.")
         print("You can do anything you want, but you have to be careful.")
         print("You can type 'help' to see the available commands.")
         print("You can type 'exit' to quit the game.")
