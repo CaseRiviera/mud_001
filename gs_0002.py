@@ -36,6 +36,8 @@ def start_game():
 # defining the game functions
 def look():
     print ("You awaken in a open glen surrounded by old oak trees, rays of sun wash over your body. Their warmth healing the wounds of an old world.")
+    print("Half-rising and holding yourself up, you begin to feel the energy the light is enbibing your skin with. ")
+    print("Recalling the sins of the past and now sitting in the grass in what could only be considered a...video game?")
     print "You can make out figures moving to the left deeper in the the trees and hdar the sounds of a solitary crow in trhe distance. ")
     print("You can type 'look' to look around")
 
