@@ -47,7 +47,7 @@ def fight():
     action = input("What do you want to do? ").strip().lower()
     if action == 'attack':
         print("You attack the enemy and win!")
-    elif action == 'defend':
+    elif action == 'defend
         print("You defend yourself successfully!")
     elif action == 'run':
         print("You run away safely!")
