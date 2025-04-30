@@ -41,7 +41,7 @@ class Game:
         print("You can type 'run' to run away.")
         action = input("What do you want to do? ").strip().lower()
         if action == 'attack':
-            print("You attack the enemy!)
+            prin("You attack the enemy!)
              dmg =  random.stdint(0, 10)
              print(f"You hit the enemy for {dmg} damage!")
 
