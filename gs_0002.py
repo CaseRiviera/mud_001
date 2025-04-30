@@ -34,9 +34,16 @@ def start_game():
         print("Let's begin the adventure!")
 
 # defining the game functions
+def talk():
+    print("You hesitate to call out, unsure who or what might be listening.")
 def look():
     print("You can type 'look' to look around")
 
+
+# simulate enemy attack 
+ # Dynamically created depending on location
+ if random.choice([True, False]):
+                print("You are under attack!")
 def fight():
     print("You are in a fight!")
     print("You can type 'attack' to attack the enemy.")
@@ -53,14 +60,12 @@ def fight():
             print("You run away successfully!")
         else:
             print("You couldn't escape! The enemy attacks you!")
-            # simulate enemy attack
-            if random.choice([True, False]):
-                print("You are injured!")
-            else:
-        print("You run away safely!")
-    else:
-        print("Invalid action. The enemy attacks you!")
-
+           
+           
+           
+ 
+        
+    
 def move():
     print("You are moving!")
     print("You can type 'left' to move left.")
